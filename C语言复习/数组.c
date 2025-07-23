@@ -1,6 +1,6 @@
 
 
-
+#include <string.h>//字符串头文件
 #include <stdio.h>
 /*n个相同类型的数据的集合
 排队：一维数组
@@ -79,5 +79,16 @@ int main() {
 		}
 		printf("\n");
 	}
+	
+	//字符数组
+	//C语言中，用字符数组来表示字符串。字符串中用\0来表示字符串结束
+	//字符数组要比真正的字符集合要多1，要多一个可以存放\0的位置
+	char name[16] = {'Z','Y','L','S','B'};
+	char name1[6] = {"zylsb"};//若为name1[5],则不会结束，会越界，至少要多一位存放\0
+	printf("%s\n",name1);
+	
+	char name2[3][16] = {"zyl","lyz","zly"};
+	printf("%d\n",sizeof(name2));//求数组内存大小
+	printf("%d\n",strlen(name2));//求字符串长度
 	return 0;
 }
