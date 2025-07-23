@@ -21,11 +21,11 @@
 
 int main()
 {
-	printf("short = %d\n",sizeof(short));
-	printf("int = %d\n",sizeof(int));
-	printf("long = %d\n",sizeof(long));
-	printf("float = %d\n",sizeof(float));
-	printf("double = %d\n",sizeof(double));
+	printf("short = %zu\n",sizeof(short));
+	printf("int = %zu\n",sizeof(int));
+	printf("long = %zu\n",sizeof(long));
+	printf("float = %zu\n",sizeof(float));
+	printf("double = %zu\n",sizeof(double));
 	
 	for(int i=0;i<=128;++i){
 		printf("%d = %c\n",i,i);		
